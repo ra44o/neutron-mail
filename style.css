@@ -1,0 +1,1746 @@
+@font-face {
+  font-family: "MyriadPro";
+  src: url("./assets/fonts/MyriadPro-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "TitilliumWeb";
+  src: url("./assets/fonts/TitilliumWeb-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "FontAwesome";
+  src: url("./assets/fonts/fontawesome-webfont.eot") format("embedded-opentype"),
+        url("./assets/fonts/fontawesome-webfont.woff2") format("woff2"),
+        url("./assets/fonts/fontawesome-webfont.woff") format("woff"),
+        url("./assets/fonts/fontawesome-webfont.ttf") format("truetype"),
+        url("./assets/fonts/fontawesome-webfont.svg") format("svg");
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Brands";
+  src: url("../webfonts/fa-brands-400.eot");
+  src: url("./assets/fonts/fa-brands-400.woff2") format("woff2"),
+        url("./assets/fonts/fa-brands-400.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Malaga";
+  src: url("./assets/fonts/MalagaOT-RegItalic.otf") format("opentype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+}
+
+.content-wrapper {
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  max-width: 1800px;
+  height: auto;
+}
+
+.logo-nav-auth {
+  display: flex;
+  margin-bottom: 10px;
+  flex-direction: row;
+}
+
+.mobile {
+  display: none;
+}
+
+.logo {
+  box-sizing: border-box;
+  margin: 73px auto 0 11.18%;
+  font-family: "TitilliumWeb", "MyriadPro", sans-serif;
+  font-size: 22pt;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #858688;
+}
+
+.logo  span {
+  color: #5b4295;
+}
+
+.navigation-mobile {
+  display: none;
+}
+
+.navigation {
+  margin-right: 4%;
+}
+
+.navigation  ul, .languages  ul {
+  display: inline-flex;
+}
+
+.navigation__item {
+  box-sizing: border-box;
+  margin-top: 84px;
+  font-family: "FontAwesome", "TitilliumWeb", sans-serif;
+  font-size: 12pt;
+  list-style-type: none;
+}
+
+.navigation__item:nth-child(-n+5) {
+  margin-right: 27px;
+}
+
+.navigation__item::first-letter {
+  text-transform: uppercase;
+}
+
+.navigation__item:hover {
+  font-weight: bold;
+}
+
+.link-decoration {
+  text-decoration: none;
+}
+
+.navigation__item-link {
+  color: rgba(69, 69, 69, 255);
+}
+
+.auth {
+  margin-top: 85px;
+  margin-right: 11%;
+}
+
+.fa {
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-align: center;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-log-in::before {
+  content: "\f090";
+  margin-right: 10px;
+  font-size: 15px;
+  color: #582c7e;
+}
+
+.logs {
+  box-sizing: border-box;
+  font-family: "FontAwesome", "TitilliumWeb", sans-serif;
+  font-weight: bold;
+  word-spacing: 1px;
+}
+
+.log-in {
+  width: 65px;
+  margin-right: 20px;
+  color: #454545;
+}
+
+.sing-up {
+  height: 40px;
+  padding: 12px 20px 16px 20px;
+  border-radius: 19px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #fff;
+  background-image: linear-gradient(to bottom right, #582c7e, #6378cf);
+  box-shadow: 0 9px 18px 0px #7a8bbf;
+}
+
+.languages {
+  margin: 0 0 0 11.18%;
+}
+
+.languages__item {
+  box-sizing: border-box;
+  font-family: "TitilliumWeb", "MyriadPro", sans-serif;
+  font-size: 13px;
+  list-style-type: none;
+}
+
+.languages__item-link {
+  color: #959595;
+}
+
+.languages__item::first-letter {
+  text-transform: capitalize;
+}
+
+.languages__item:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.languages__item:nth-child(-n+3)::after {
+  content: "/";
+  display: inline-block;
+  margin: 0 13px;
+  color: #959595;
+}
+
+.languages__item:hover::after {
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.secure-email-communication {
+  width: 100%;
+  background-image: url("./assets/images/top-banner.webp");
+  background-size: cover;
+  background-position: bottom center;
+  box-shadow: 0 300px 125px 40px #fff inset;
+}
+
+.headers-networks-icons {
+  position: relative;
+  display: inline-flex;
+  width: 100%;
+  margin-top: 150px;
+}
+
+.h1-and-h3 {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.h1-and-social-nets {
+  display: inline-flex;
+  width: 100%;
+}
+
+.social-media-links {
+  position: absolute;
+  top: 23px;
+  right: 2%;
+  display: flex;
+  flex-direction: column;
+}
+
+.link-gp {
+  margin-bottom: 15px;
+}
+
+.link-fb {
+  margin-bottom: 15px;
+}
+
+.fab-google-plus::before,
+.fab-facebook::before,
+.fab-twitter::before {
+  font-family: "Font Awesome 5 Brands";
+  font-size: 21px;
+  color:#676766;
+}
+
+.fab-google-plus::before {
+  content: "\f0d4";
+}
+
+.fab-google-plus:hover::before {
+  color: #de5347;
+}
+
+.fab-facebook::before {
+  content: "\f082";
+}
+
+.fab-facebook:hover::before {
+  color: #157dc3;
+}
+
+.fab-twitter::before {
+  content: "\f081";
+}
+
+.fab-twitter:hover::before {
+  color: #41abe1;
+}
+
+.main-header-secure {
+  font-family: "TitilliumWeb", "MyriadPro", sans-serif;
+  font-size: 60px;
+  letter-spacing: 1px;
+  color: #7a7a79;
+}
+
+.based-in-somewhere {
+  margin: -7px 0 0 0;
+  font-family: "TitilliumWeb", "MyriadPro", sans-serif;
+  font-size: 35px;
+  letter-spacing: 1px;
+  color: #7a7a79;
+}
+
+.based-in-somewhere  span {
+  color: #fc6c6e;
+}
+
+.buttons-container {
+  display: inline-flex;
+  width: 100%;
+  margin-top: 65px;
+  margin-bottom: 242.5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.create-account {
+  width: 246px;
+  margin: 0 25px 0 0;
+  padding: 13px 0 17px 0;
+  font-family: "TitilliumWeb", sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #fff;
+  background-image: linear-gradient(to right, #646c92, #5f2e69);
+  border-radius: 26px;
+  box-shadow: 0px 13px 27px 3px #5c78cb;
+}
+
+.apple-btn, .play-btn {
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  background-color: #7c5180;
+  border-radius: 50%;
+  box-shadow: 0px 24px 29px 0 #5c78cb;
+}
+
+.apple-btn {
+  margin-right: 21px;
+}
+
+.fa-apple::before {
+  content: "\f179";
+  margin-left: 15px;
+  font-size: 21px;
+  line-height: 2.2;
+  color: #fff;
+}
+
+.fab-play::before {
+  content: "\f3ab";
+  margin-left: 13px;
+  font-family: "Font Awesome 5 Brands";
+  font-size: 21px;
+  line-height: 2.2;
+  color: #fff;
+}
+
+.fab {
+  font-style: normal;
+}
+
+.physical-security {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.security-items-container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin-top: 110px;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.security-item {
+  max-width: 375px;
+  display: flex;
+  flex-direction: column;
+  font-family: "TitilliumWeb", sans-serif;
+}
+
+
+.swiss-privacy-item {
+  position: relative;
+  margin-left: 6%;
+}
+
+.swiss-privacy-item::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 210px;
+  margin: -33% 0 0 105%;
+  background-color: #b9b9b9;
+}
+
+.double-encryption-item::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 426px;
+  margin: 2% 0% 0 101%;
+  background-color: #b9b9b9;
+}
+
+.security-items-container::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 10.667%;
+  height: 1px;
+  background-color: #b9b9b9;
+}
+
+.img-and-headers {
+  display: flex;
+  flex-direction: row;
+}
+
+.img-and-headers  img {
+  position: relative;
+}
+
+.img-shield {
+  right: 14px;
+  bottom: 2px;
+}
+
+.swiss-privacy-h3 {
+  margin: -2px 0 0 -8px;
+  letter-spacing: 0.5px;
+}
+
+.swiss-privacy-h4 {
+  margin: -10px 0 0px -8px;
+}
+
+.img-lock {
+  right: 27px;
+  bottom: 10px;
+  z-index: 1;
+}
+
+.img-key {
+  margin: 0 0 0 -15px;
+}
+
+.security-item-headers h3{
+  font-size: 30px;
+  text-transform: capitalize;
+  color: #555555;
+}
+
+.security-item-headers  h4,
+.security-item-description {
+  color: #959393;
+}
+
+.security-item-headers  h4 {
+  letter-spacing: 1px;
+}
+
+.security-item-description {
+  font-size: 14px;
+}
+
+.swiss-privacy-description {
+  margin: 20px 0 0 0;
+}
+
+
+.double-encryption-item {
+  position: relative;
+  margin: 0 4%;
+}
+
+.double-encryption-h3 {
+  position: relative;
+  z-index: 5;
+  margin: -2px 0 0 -35px;
+  letter-spacing: 0.5px;
+}
+
+.double-encryption-h4 {
+  position: relative;
+  z-index: 4;
+  margin: -10px 0 0 -34px;
+}
+
+.double-encryption-description {
+  margin: 13px 0 0 0;
+}
+
+.annonymous-email-item {
+  position: relative;
+  right: 1%;
+}
+
+.annonymous-email-h3 {
+  margin: 0 0 0 6px;
+}
+
+.annonymous-email-h4 {
+  margin: -10px 0 0 8px;
+}
+
+.annonymous-email-description {
+  margin: 26px 0 0 0;
+}
+
+.physical-security-h2 {
+  margin: 103px 0 0 0;
+  font-family: "TitilliumWeb", "MyriadPro", sans-serif;
+  font-size: 57px;
+  text-transform: capitalize;
+  letter-spacing: 1.85px;
+  color: #535353;
+}
+
+.physical-security-description {
+  max-width: 615px;
+  margin: 4px 13% 0 0;
+  font-family: "TitilliumWeb", "MyriadPro", sans-serif;
+  font-size: 24px;
+  text-align: end;
+  line-height: 0.95;
+  color: #959393;
+}
+
+.physical-security-description  span {
+  color: #f65151;
+}
+
+.additional-info-wrapper {
+  position: relative;
+  margin: 25px 0 0 27%;
+}
+
+.additional-info-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 974px;
+  height: 1px;
+  margin: 9% 0 0 -291%;
+  background-color: #b9b9b9;
+}
+
+.additional-info-wrapper__button {
+  position: relative;
+  display: block;
+  padding: 15px 27px 19px 27px;
+  font-family: "TitilliumWeb", "MyriadPro", sans-serif;
+  text-align: center;
+  font-size: 17px;
+  color: #676767;
+  border: 1px solid #b9b9b9;
+  border-radius: 32px;
+}
+
+.opinion-laptop-donate {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.opinion-laptop-donate::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  width: 82%;
+  height: 1px;
+  margin: 46.8% 0 0 24.2%;
+  background-color: #b9b9b9;
+}
+
+.our-partners {
+  position: relative;
+  z-index: 3;
+  width: 52.389%;
+  height: 6.26%;
+  margin: 2.3% 0 0 1.2%;
+}
+
+.switch-and-opinion {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  margin: 3% 0 0 20.2%;
+  flex-direction: row;
+}
+
+.switch {
+  display: flex;
+  margin: 0.5% 2% 0 0;
+  flex-direction: column;
+}
+
+.switch__item {
+  position: relative;
+  z-index: 1;
+  width: 11px;
+  height: 11px;
+  margin-bottom: 10px;
+  background-color: #b7b7b7;
+  border-radius: 50%;
+}
+
+.switch__item:hover {
+  z-index: 5;
+  background-color: #101010;
+  transform: scale(1.18);
+}
+
+.opinion {
+  position: relative;
+  z-index: 1;
+  text-align: left;
+  font-family: "Malaga", serif;
+  font-size: 24px;
+  line-height: 1.3;
+  color: #101010;
+}
+
+.opinion q {
+  quotes: none;
+}
+
+.author-of-opinion {
+  font-size: 16px;
+  color: #818181;
+}
+
+.h3-description-buttons {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  margin: 6.111% auto 160px auto;
+  flex-direction: column;
+  align-items: flex-end;
+  font-family: "TitilliumWeb", "MyriadPro", sans-serif;
+}
+
+.any-device-anywhere {
+  font-size: 37px;
+  font-weight: 500;
+  color: #5e5e5e;
+}
+
+.device-description {
+  margin-top: 7px;
+  text-align: right;
+  line-height: 1.5;
+  color: #959393;
+}
+
+.apple-google-buttons {
+  display: inline-flex;
+  margin-top: 28px;
+}
+
+.apple-google-buttons a:first-child {
+  margin-right: 16px;
+}
+
+.laptop-tablet-phone {
+  position: absolute;
+  z-index: 2;
+  width: 32.111%;
+  height: 63.5438%;
+  margin: 8% 0 0% 53%;
+}
+
+.background-gradient {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 90%;
+  background-image: linear-gradient(to top right, #fff 50%, #eee);
+  transform: skewY(-6.45deg) translateY(28%);
+  transform-origin: top right;
+}
+
+.privacy-description-donate {
+  display: flex;
+  margin: 77px 0 0 0;
+  flex-direction: column;
+  align-items: center;
+  font-family: "TitilliumWeb", "MyriadPro", sans-serif;
+}
+
+.human-right {
+  font-size: 37px;
+  line-height: 0.8;
+  color: #5e5e5e;
+  font-weight: 500;
+}
+
+.human-right-description {
+  font-size: 29px;
+  color: #7c7c7c;
+  font-weight: 400;
+}
+
+.upgrade-donate-buttons {
+  margin: 34px 0 80px 0;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.upgrade-link {
+  display: inline-block;
+  margin-right: 45px;
+  padding: 7px 25px 12px 25px;
+  color: #ffffff;
+  background-image: linear-gradient(to right, #646c92, #5f2e69);
+  border-radius: 40px;
+  box-shadow: 0px 10px 30px 0 #666da0;
+}
+
+.donate-link {
+  display: inline-block;
+  padding: 7px 45px 12px 45px;
+  color: #ffffff;
+  background-image: linear-gradient(to right, #35bbe0, #5e7bea);
+  border-radius: 40px;
+  box-shadow: 0px 10px 30px 0 #61b7b6;
+}
+
+.fa-cloud::before {
+  content: "\f0ee";
+  margin-right: 4px;
+  line-height: 2.2;
+}
+
+.fa-dollar::before {
+  content: "\f155";
+  line-height: 2.2;
+}
+
+.footer {
+  position: relative;
+  margin-top: 1%;
+  font-family: "TitilliumWeb", "MiryadaPro", sans-serif;
+}
+
+.footer-logos-description {
+  margin: 0 0% 0% 57%;
+  letter-spacing: 0.5px;
+  color: #9d9d9d;
+}
+
+.footer-logotypes {
+  height: 16.64%;
+  width: 54.111%;
+  margin: 0 0 0 26%;
+}
+
+.footer-links {
+  display: flex;
+  margin: 8.2% 0 0 12%;
+}
+
+.company-links__item,
+.social-networks__item {
+  list-style-type: none;
+}
+
+.company-links {
+  position: relative;
+}
+
+.company-links__item {
+  font-size: 15px;
+}
+
+.company-links__item:nth-child(4) {
+  margin-top: 12%;
+}
+
+.reversed-ul-mark {
+  direction: rtl;
+  font-size: 15px;
+  list-style-position: inside;
+}
+
+.about-company {
+  position: relative;
+  width: 7%;
+  margin: 0 0 0 auto;
+  text-align: right;
+}
+
+.about-company-ul {
+  margin-top: 23%;
+}
+
+.legal {
+  width: 16%;
+  margin: 0px 0 0 1%;
+  text-align: right;
+}
+
+
+.legal-ul {
+  margin-top: 10%;
+}
+
+.neutron-mail {
+  width: 13%;
+  margin: 0 27% 0 0%;
+  text-align: right;
+}
+
+
+.neutron-mail-ul {
+  margin-top: 12%;
+}
+
+.about-company,
+.legal,
+.neutron-mail {
+  text-transform: capitalize; 
+}
+
+.about-company-header,
+.legal-header,
+.neutron-mail-header,
+.company-links-link {
+  font-weight: bold;
+  color: #5c5c5c;
+}
+
+.support-link {
+  text-decoration: underline;
+}
+
+.company-links__item,
+.about-company__item,
+.legal__item,
+.neutron-mail__item {
+  color: #5c5c5c; 
+}
+
+.company-links::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 80%;
+  margin: 3% 0 0 -8%;
+  background-color: #b9b9b9;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 77.8%;
+  height: 1px;
+  margin-top: -1%;
+  background-color: #b9b9b9;
+}
+
+.footer::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 76%;
+  margin: -33.1% 0 0 77.7%;
+  background-color: #b9b9b9;
+}
+
+.footer-networks-madeby {
+  margin-top: 4.3%;
+  padding-bottom: 21px;
+  font-size: 12px;
+}
+
+.footer-networks-madeby::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 1px;
+  height: 53%;
+  margin: 0 0 0 51%;
+  background-color: #b9b9b9;
+}
+
+.footer-social-networks {
+  display: flex;
+  margin-left: 11%;
+  flex-direction: row;
+}
+
+.social-networks__item {
+  text-transform: capitalize;
+}
+
+.social-networks__item:nth-child(-n+4)::after {
+  content: "/";
+  margin: 0 13px;
+  color: #5c5c5c;
+}
+
+.social-networks-link {
+  color: #5c5c5c;
+}
+
+.made-by {
+  margin: 0.7% 0 0 11%;
+  color: #5c5c5c;
+}
+
+@media screen and (max-width: 1799px) {
+  .security-items-container::after {
+    right: 0;
+  }
+
+  .opinion-laptop-donate::after {
+    margin: 47% 0 0 24.2%;
+  }
+
+  .footer::after {
+    bottom: 23.9%;
+    margin: 0 0 1% 77.7%;
+  }
+
+  .footer-networks-madeby::after {
+    height: 54%;
+  }
+}
+
+@media screen and (max-width: 1399px) {
+  .security-items-container {
+    margin-top: 75px;
+  }
+
+  .security-items-container::after {
+    right: 0;
+  }
+
+  .swiss-privacy-item {
+    margin-left: 3%;
+  }
+
+  .swiss-privacy-item::after {
+    height: 105%;
+    margin: -23% 0 0 105%;
+  }
+
+  .double-encryption-item::after {
+    height: 225.122%;
+  }
+
+  .physical-security-h2 {
+    margin: 80px 2% 0 0;
+    font-size: 49px;
+  }
+
+  .physical-security-description {
+    margin: 4px 20% 0 0;
+    font-size: 21px;
+  }
+
+  .switch-and-opinion {
+    margin: 3% 0 0 12.2%;
+  }
+
+  .opinion {
+    font-size: 20px;
+  }
+
+  .h3-description-buttons {
+    margin: 6.111% auto 8.889% 31%;
+  }
+
+  .any-device-anywhere {
+    font-size: 30px;
+  }
+
+  .device-description {
+    font-size: 14px;
+  }
+
+  .laptop-tablet-phone {
+    margin: 8% 0 0% 55%;
+  }
+
+  .opinion-laptop-donate::after {
+    margin: 51% 0 0 24.2%;
+  }
+
+  .human-right {
+    font-size: 30px;
+  }
+
+  .human-right-description {
+    font-size: 24px;
+  }
+
+  .footer-logos-description {
+    margin: 0 0% 0% 60%;
+    font-size: 11px;
+  }
+
+  .footer-links {
+    margin: 5.2% 0 0 12%;
+  }
+
+  .footer::after {
+    bottom: 26%;
+    height: 77%;
+    margin: 0 0 0 77.7%;
+  }
+
+  .footer-networks-madeby::after {
+    height: 63%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .logo-nav-auth {
+    align-items: baseline;
+  }
+
+  .logo {
+    margin: 0 auto 0 9.18%;
+    font-size: 16pt;
+  }
+
+  .navigation {
+    margin-right: 4%;
+  }
+
+  .navigation__item {
+    margin-top: 0;
+    font-size: 10pt;
+  }
+
+  .navigation__item:nth-child(-n+5) {
+    margin-right: 20px;
+  }
+
+  .auth {
+    margin-top: 6%;
+    margin-right: 6%;
+  }
+
+  .log-in,
+  .sing-up {
+    font-size: 12px;
+  }
+
+  .languages {
+    margin: 0 0 0 9.18%;
+  }
+
+  .headers-networks-icons {
+    margin-top: 12%;
+  }
+
+  .secure-email-communication {
+    box-shadow: 0 250px 125px 40px #fff inset;
+  }
+
+  .main-header-secure {
+    font-size: 40px;
+  }
+
+  .based-in-somewhere {
+    font-size: 22px;
+  }
+
+  .social-media-links {
+    top: 10%;
+    right: 3%;
+  }
+
+  .buttons-container {
+    margin-top: 5%;
+    margin-bottom: 10%;
+    transform: scale(0.9);
+  }
+
+  .security-items-container::after {
+    display: none;
+  }
+
+  .security-items-container {
+    margin-top: 5%;
+  }
+
+  .swiss-privacy-item::after {
+    display: none;
+  }
+
+  .double-encryption-item::after {
+    display: none;
+  }
+
+  .security-item {
+    transform: scale(0.85);
+  }
+
+  .security-item-headers  h3 {
+    font-size: 20px
+  }
+
+  .security-item-headers  h4 {
+    font-size: 80%;
+  }
+
+  .swiss-privacy-item {
+    margin-left: 2%;
+  }
+
+  .swiss-privacy-h4 {
+    margin: 0px 0 0px -8px;
+  }
+
+  .swiss-privacy-description {
+    margin: 0;
+  }
+
+  .double-encryption-h4 {
+    margin: 0px 0 0 -34px;
+  }
+
+  .double-encryption-description {
+    margin: -6px 0 0 0;
+  }
+
+  .annonymous-email-h4 {
+    margin: 0px 0 0 8px;
+  }
+
+  .annonymous-email-description {
+    margin: 7px 0 0 0;
+  }
+
+  .physical-security-h2 {
+    margin: 5% 0 0 0;
+    font-size: 40px;
+  }
+
+  .physical-security-description {
+    max-width: 450px;
+    margin: 4px 16% 0 0;
+    font-size: 16px;
+  }
+
+  .additional-info-wrapper {
+    margin: 2% 0 0 0px;
+  }
+
+  .additional-info-wrapper::before {
+    display: none;
+  }
+
+  .additional-info-wrapper__button {
+    font-size: 14px;
+  }
+
+  .our-partners {
+    margin: 4% 0 0 1.2%;
+  }
+
+  .opinion {
+    font-size: 14px;
+  }
+
+  .author-of-opinion {
+    font-size: 11px;
+  }
+
+  .h3-description-buttons {
+    margin: 10% auto 8.889% 25%;
+  }
+
+  .any-device-anywhere {
+    font-size: 20px;
+  }
+
+  .device-description {
+    font-size: 12px;
+  }
+
+  .apple-google-buttons {
+    margin-top: 20px;
+  }
+
+  .apple-google-buttons  a  img {
+    width: 120px;
+    height: 36.67px;
+  }
+
+  .opinion-laptop-donate::after {
+    display: none;
+  }
+
+  .privacy-description-donate {
+    margin: 11% 0 0 0;
+  }
+
+  .human-right {
+    font-size: 20px;
+  }
+
+  .human-right-description {
+    font-size: 16px;
+  }
+
+  .upgrade-donate-buttons {
+    margin: 3% 0 7% 0;
+    transform: scale(0.8);
+  }
+
+  .footer::before {
+    display: none;
+  }
+
+  .footer::after {
+    display: none;
+  }
+
+  .footer-logos-description {
+    margin: 0 0% 0% 54%;
+    font-size: 10px;
+  }
+
+  .footer-links {
+    margin: 5.2% 0 0 9%;
+  }
+
+  .company-links::before {
+    display: none;
+  }
+
+  .company-links__item {
+    font-size: 10px;
+  }
+
+  .about-company-header,
+  .legal-header,
+  .neutron-mail-header {
+    font-size: 12px;
+  }
+
+  .reversed-ul-mark {
+    font-size: 10px;
+  }
+
+  .about-company,
+  .legal,
+  .neutron-mail {
+    margin-top: -1%;
+  }
+
+  .footer-networks-madeby {
+    font-size: 10px;
+  }
+
+  .footer-social-networks {
+    margin-left: 9%;
+  }
+
+  .made-by {
+    margin: 0.7% 0 0 9%;
+  }
+
+  .footer-networks-madeby::after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .content-wrapper {
+    position: relative;
+  }
+
+  .header {
+    position: relative;
+    z-index: 2;
+  }
+
+  .main {
+    position: relative;
+    z-index: 1;
+  }
+
+  .logo-nav-auth {
+    position: relative;
+    margin-bottom: 0;
+  }
+
+  .logo {
+    margin: 12px auto;
+    font-size: 20pt;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .auth {
+    display: none;
+  }
+
+  .navigation-mobile {
+    display: none;
+  }
+  
+  .languages {
+    display: none;
+  }
+
+  .mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 64px;
+    height: 100%;
+  }
+
+  #checkbox-menu,
+  #languages-checkbox {
+    display: none;
+  }
+
+  #checkbox-menu:checked ~ .navigation-mobile {
+    display: block;
+    border-bottom-right-radius: 0;
+  }
+
+  .checkbox-menu-label {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .burger-line,
+  .burger-line::before,
+  .burger-line::after {
+    position: relative;
+    display: flex;
+    width: 30px;
+    height: 5px;
+    background-color: #5b4298;
+    border-radius: 25px;
+  }
+
+  .burger-line::before,
+  .burger-line::after {
+    content: "";
+    position: absolute;
+  }
+
+  .burger-line::before {
+    margin-top: -10px
+  }
+
+  .burger-line::after {
+    margin-top: 10px;
+  }
+
+  .navigation-mobile,
+  .languages-mobile {
+    position: absolute;
+    display: none;
+  }
+
+  .mobile-menu {
+    background-image: linear-gradient(to bottom right, #646b91, #5f2f6a);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    list-style-type: none;
+  }
+
+  .mobile-menu__link,
+  .languages-checkbox,
+  .languages-mobile__link {
+    display: inline-block;
+    width: 100%;
+    font-family: "TitilliumWeb", "MyriadPro", sans-serif;
+    text-transform: capitalize;
+    color: #fff;
+  }
+
+  .fa-log-in::before {
+    margin-right: 6px;
+    font-size: 15px;
+    color: #fff;
+  }
+
+  .fa-sing-up::before {
+    content: "\f234";
+    margin-right: 6px;
+    font-size: 15px;
+    color: #fff;
+  }
+
+  .mobile-menu__item,
+  .languages-mobile__item {
+    position: relative;
+    padding: 10px;
+    width: 150px;
+    border-bottom: 1px solid #fff;
+  }
+
+  .mobile-menu__item:nth-child(-n+2) {
+    font-weight: bold;
+  }
+
+  .languages-checkbox::after {
+    content: "";
+    position: absolute;
+    top: 18px;
+    right: 10px;
+    border: 5px solid;
+    border-color: transparent transparent transparent #fff;
+  }
+
+  #languages-checkbox:checked ~ .languages-mobile {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: block;
+    width: 100%;
+    background-image: linear-gradient(to bottom right, #5f2f6a, #646b91);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    list-style-type: none;
+  }
+
+  #languages-checkbox:checked ~ .languages-checkbox::after {
+    transform: scaleX(-1);
+  }
+
+  .secure-email-communication {
+    box-shadow: 0 190px 60px 40px #fff inset;
+  }
+
+  .main-header-secure {
+    font-size: 30px;
+  }
+
+  .based-in-somewhere {
+    font-size: 17px;
+  }
+
+  .buttons-container {
+    transform: scale(0.65);
+  }
+
+  .fab-google-plus::before,
+  .fab-facebook::before,
+  .fab-twitter::before {
+    font-size: 19px;
+  }
+
+  .security-items-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .security-item {
+    transform: none;
+  }
+
+  .swiss-privacy-item {
+    margin: 0 0 40px 0;
+  }
+
+  .double-encryption-item {
+    margin: 0 0 40px 0;
+  }
+
+  .annonymous-email-item {
+    right: 0;
+  }
+
+  .physical-security-h2 {
+    font-size: 30px
+  }
+
+  .physical-security-description {
+    margin: 2% auto 0 auto;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .additional-info-wrapper__button {
+    transform: scale(0.8);
+  }
+
+  .our-partners {
+    width: 80%;
+  }
+
+  .opinion {
+    font-size: 10px;
+  }
+
+  .author-of-opinion {
+    font-size: 7px;
+  }
+
+  .h3-description-buttons {
+    margin: 11% 15% 0 auto;
+  }
+
+  .laptop-tablet-phone {
+    display: none;
+  }
+
+  .background-gradient {
+    height: 70%;
+    transform: skewY(-6.45deg) translateY(30%);
+  }
+
+  .privacy-description-donate {
+    margin: 10% 0 0 0;
+  }
+  
+  .human-right-description {
+    margin: 5px 0 0 0;
+  }
+
+  .upgrade-donate-buttons {
+    margin: 2% 0 7% 0;
+    transform: scale(0.6);
+  }
+
+  .footer-logos-description {
+    margin: 0;
+    text-align: center;
+  }
+
+  .footer-logotypes {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .company-links__item,
+  .about-company-ul  li,
+  .legal-ul  li,
+  .neutron-mail-ul  li {
+    margin-bottom: 3px;
+  }
+
+  .about-company {
+    width: 10%;
+  }
+
+  .legal {
+    width: 24%;
+    margin-left: 0;
+  }
+
+  .neutron-mail {
+    width: 20%;
+    margin-right: 4%;
+  }
+}
+
+@media screen and (max-width: 539px) {
+  .secure-email-communication {
+    box-shadow: 0 100px 60px 20px #fff inset;
+  }
+
+  .headers-networks-icons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-header-secure {
+    font-size: 21px;
+  }
+
+  .based-in-somewhere {
+    font-size: 13px;
+  }
+
+  .social-media-links {
+    position: relative;
+    top: 0;
+    right: 0;
+    display: flex;
+    margin: 5% auto 0 auto;
+    flex-direction: row;
+  }
+
+  .link-gp {
+    margin: 0;
+  }
+
+  .link-fb {
+    margin: 0 20px;
+  }
+
+  .fab-google-plus::before,
+  .fab-facebook::before,
+  .fab-twitter::before {
+    font-size: 28px;
+  }
+
+  .create-account {
+    width: 180px;
+  }
+
+  .security-items-container {
+    width: 90%;
+  }
+
+  .physical-security-h2 {
+    font-size: 25px;
+  }
+
+  .physical-security-description {
+    font-size: 12px;
+  }
+
+  .our-partners {
+    display: none;
+    width: 90%;
+  }
+
+  .h3-description-buttons {
+    margin: 8% 5% 0 auto;
+  }
+
+  .any-device-anywhere {
+    font-size: 15px;
+  }
+
+  .device-description {
+    font-size: 11px;
+  }
+
+  .apple-google-buttons  a  img {
+    width: 135px;
+    height: 41.25px;
+  }
+
+  .privacy-description-donate {
+    margin: 15% 0 0 0;
+  }
+
+  .human-right {
+    font-size: 15px;
+  }
+
+  .human-right-description {
+    font-size: 12px;
+  }
+
+  .upgrade-donate-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    font-size: 25px;
+  }
+
+  .upgrade-link {
+    margin: 0 0 30px 0;
+  }
+
+  .footer-logos-description {
+    display: none;
+  }
+
+  .footer-logotypes {
+    display: none;
+    width: 90%;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reversed-ul-mark {
+    direction: ltr;
+    font-size: 12px;
+  }
+
+  .about-company,
+  .legal,
+  .neutron-mail {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    flex-direction: column;
+    align-items: baseline;
+    text-align: left;
+  }
+
+  .about-company {
+    margin-top: 10px;
+  }
+
+  .about-company-header,
+  .legal-header,
+  .neutron-mail-header {
+    margin: 0 10px 0 0;
+  }
+
+  .about-company-ul,
+  .legal-ul,
+  .neutron-mail-ul {
+    display: inline-flex;
+    margin: 0 0 10px 0;
+    flex-wrap: wrap;
+    list-style-type: none;
+    flex-direction: column;
+  }
+
+  .company-links__item {
+    font-size: 12px;
+  }
+
+  .company-links__item:nth-child(4) {
+    margin-top: 2%;
+  }
+
+  .about-company-ul  li,
+  .legal-ul  li,
+  .neutron-mail-ul  li {
+    margin-right: 12px;
+  }
+
+  .footer-social-networks {
+    margin-right: 9%;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  .social-networks__item {
+    margin-bottom: 15px;
+    font-size: 12px;
+  }
+}
